@@ -7,3 +7,10 @@ Inspired by [Vincent-the-gamer/userscript-konachan-downloader](https://github.co
 
 ## License 许可证
 MIT License
+
+## Supported Sites 支持的网站
+- https://safebooru.donmai.us
+- https://danbooru.donmai.us
+- https://konachan.com
+- https://konachan.net
+- https://yande.re
