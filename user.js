@@ -12,6 +12,7 @@
 // @match        https://konachan.net/*
 // @match        https://yande.re/*
 // @run-at       document-body
+// @grant        GM.setClipboard
 // @grant        GM_setClipboard
 // ==/UserScript==
 
@@ -23,9 +24,9 @@ const BUTTON = document.createElement("button");
 BUTTON.addEventListener("click", getRawImageUrls);
 BUTTON.innerText = "复制所有图片原图链接";
 const DIV = document.createElement("div");
-DIV.id = "x-myt-booru-downloader";
+DIV.id = "x-myt-booru-img-url-grabber";
 DIV.innerHTML = `<style>
-#x-myt-booru-downloader button {
+#x-myt-booru-img-url-grabber button {
     position: fixed;
     top: 0;
     right: 0;
@@ -37,13 +38,13 @@ DIV.innerHTML = `<style>
     color: #000;
     cursor: pointer;
 }
-#x-myt-booru-downloader button:hover {
+#x-myt-booru-img-url-grabber button:hover {
     background-color: #31ada0;
 }
-#x-myt-booru-downloader button:active {
+#x-myt-booru-img-url-grabber button:active {
     background-color: #2a9388;
 }
-#x-myt-booru-downloader button:disabled {
+#x-myt-booru-img-url-grabber button:disabled {
     background-color: #579c95;
 }
 </style>`
